@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Davie's Burgers</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h1>Davie's Burgers</h1>
+        <h2>Create your own burger!</h2>
+        <br>
+        <form action="submit.html">
+        <p>
+            <label for="protein">What type of protien would you like?</label>
+            <input type="text" placeholder="protein" id="protein" class="protein">
+        </p>
+        <br>
+        <p>
+            <label for="number">How many patties would you like?</label>
+            <input type="number" id="number" min="2" max="4">
+        </p>
+        <br>
+        <p>
+            <label for="cooked">How do you want you patty to be cooked:</label>
+            <br>
+            <span>Rare</span>
+            <input type="range" id="cooked" min="1" max="5" name="doneness">
+            <span>Well done</span>
+        </p>
+        <br>
+        <p>
+            <span>What topping will you like?</span>
+            <br>
+            <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+            <label for="lettuce">Lettuce</label>
+            <input type="checkbox" name="topping" id="onion" value="onion">
+            <label for="onion">Onion</label>
+            <input type="checkbox" name="topping" id="tomato" value="tomato">
+            <label for="tomato">Tomato</label>
+        </p>
+        <br>
+        <p>
+            <span>Would you like to add cheese?</span>
+            <br>
+            <input type="radio" name="cheese" id="yes" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="cheese" id="no" value="no">
+            <label for="no">No</label>
+        </p>
+        <br>
+        <p>
+            <label for="bun">What type of bun would you like?</label>
+            <select name="bun" id="bun" class="bun">
+                <option value="seseam" selected>Seseam</option>
+                <option value="potatoe">Potatoe</option>
+                <option value="pretzal">Pretzal</option>
+            </select>
+        </p>
+        <br>
+        <p>
+            <label for="sause">What type of sause would you prefer?</label>
+            <input list="sauses" id="sause" name="sause" placeholder="Sauses" class="sauses">
+            <datalist id="sauses">
+                <option value="Ketchup"></option>
+                <option value="Mayo"></option>
+                <option value="Mustard"></option>
+                <option value="Non"></option>
+            </datalist>
+        </p>
+        <br>
+        <p>
+            <label for="extra">Anything else you would like?</label>
+            <br>
+            <br>
+            <textarea id="extra" name="extra" rows="3" cols="50"></textarea>
+        </p>
+        <p>
+            <button type="submit" class="pay">Pay</button>
+        </p>
+        </form>
+    </body>
+</html>
